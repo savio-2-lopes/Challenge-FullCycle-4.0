@@ -1,75 +1,114 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+# Desafio 2 - Autenticação com OpenID Connect e Keycloak
 
-[travis-image]: https://api.travis-ci.org/nestjs/nest.svg?branch=master
-[travis-url]: https://travis-ci.org/nestjs/nest
-[linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
-[linux-url]: https://travis-ci.org/nestjs/nest
-  
-  <p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications, heavily inspired by <a href="https://angular.io" target="blank">Angular</a>.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/dm/@nestjs/core.svg" alt="NPM Downloads" /></a>
-<a href="https://travis-ci.org/nestjs/nest"><img src="https://api.travis-ci.org/nestjs/nest.svg?branch=master" alt="Travis" /></a>
-<a href="https://travis-ci.org/nestjs/nest"><img src="https://img.shields.io/travis/nestjs/nest/master.svg?label=linux" alt="Linux" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#5" alt="Coverage" /></a>
-<a href="https://gitter.im/nestjs/nestjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge"><img src="https://badges.gitter.im/nestjs/nestjs.svg" alt="Gitter" /></a>
-<a href="https://opencollective.com/nest#backer"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec"><img src="https://img.shields.io/badge/Donate-PayPal-dc3d53.svg"/></a>
-  <a href="https://twitter.com/nestframework"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+#### 🎲 OpenID Connect e Keycloak
 
-## Description
+Nesse desafio será realizado o get started disponibilizado no site oficial do Keycloak. A idéia principal é rodar o keycloak utilizando docker em seu computador<br>
+Para isso, primeiro verifique se tem o [Node.js](https://nodejs.org/en/), o [Docker](https://docs.docker.com/engine/install/) e, opcionalmente, as dependencias do [GO] (https://golang.org/doc/install).
+Estaremos utilizando o Linux para esse desafio.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
+#### 🧭 Criando aplicação NodeJS
 
 ```bash
-$ npm install
+
+# No seu terminal, utilize esse comando
+$ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay.io/keycloak/keycloak:11.0.1
+
+# Isso irá iniciar o Keycloak no localhost:8080, que pode ser acessado no navegador escrevendo
+$ localhost:8080
+
+# A senha e o login será admin
+
 ```
 
-## Running the app
+#### 🧭 Crie um realm
 
 ```bash
-# development
-$ npm run start
 
-# watch mode
-$ npm run start:dev
+# Um realm no Keycloak permite a criação de grupos isolados de aplicativos e usuários. 
+# Por padrão, há um único reino no Keycloak chamado master. 
+# Vamos criar nosso primeiro realm, acesse no navegador:
 
-# production mode
-$ npm run start:prod
+$ http://localhost:8080/auth/admin
+
+# Passe o mouse sobre a lista no canto superior onde está escrito master e clique em add realm
+# Preencha o formulário com os seguintes valores:
+
+$ name: myrealm
+
+# Clique em create
+
 ```
 
-## Test
+#### 🧭 Crie um user
 
 ```bash
-# unit tests
-$ npm run test
 
-# e2e tests
-$ npm run test:e2e
+# Por padrão na há usuários, então vamos criar um. 
+# No navegador digite:
 
-# test coverage
-$ npm run test:cov
+$ http://localhost:8080/auth/admin
+
+# Clique em users e em add user
+# Preencha o formulário com os seguintes valores:
+
+$ username: myuser
+
+$ first name: <Seu_primeiro_nome>
+$ last name: <Seu_sobrenome>
+
+$ Clique em Save
+
+# O usuário precisará de uma senha inicial definida para poder fazer o login. Para fazer isso:
+# Clique em credentials (parte superior da página)
+# Preencha o formulário 
+# Clique em OPEN ao lado de Temporário para evitar ter que atualizar a senha no primeiro login
+
+# Vamos agora tentar fazer login no console da conta para verificar se o usuário está configurado corretamente.
+# No navegador digite:
+$ http://localhost:8080/auth/realms/myrealm/account
+
+# Faça login com myuser e a senha que você criou anteriormente
+
 ```
 
-## Support
+#### 🧭 Crie um user
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+```bash
 
-## Stay in touch
+Proteja sua primeira aplicação
+# A primeira etapa é registrar este aplicativo com sua instância Keycloak:
+# No navegador digite:
+$ http://localhost:8080/auth/admin
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+# Clique em 'clients'
 
-## License
+# Preencha o formulário com os seguintes valores:
 
-  Nest is [MIT licensed](LICENSE).
+$ client ID: myclient
+$ client Protocol: openid-connect
+$root URL: https://www.keycloak.org/app/
+
+# Essa aplicação SPA acima é a que o site Keycloak disponibiliza para testes.
+
+# Clique em Save
+# Agora você pode clicar em Entrar para se autenticar usando o servidor Keycloak iniciado anteriormente.
+
+
+```
+
+## 🦸 Autor
+
+<a href="https://github.com/savio-2-lopes">
+ <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/60948849?s=460&u=689ef123d3278304945aca213bed7413645ea4a7&v=4" width="100px;" alt=""/>
+ <br>
+ <sub><b>    Savio Lopes </b></sub></a> <a href="https://github.com/savio-2-lopes" title="Github">  🚀</a>
+ <br><br>
+ 
+ 
+[![Linkedin Badge](https://img.shields.io/badge/savio-lopes-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://https://www.linkedin.com/in/savio-lopes/)](https://www.linkedin.com/in/savio-lopes/) 
+[![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/savio-2-lopes)](https://github.com/savio-2-lopes)
+[![Whatsapp Badge](https://img.shields.io/badge/-Whatsapp-4CA143?style=flat-square&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=12996798894&text=Hello!)](https://api.whatsapp.com/send?phone=12996798894&text=Hello!)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:savioaugulopes@gmail.com)](mailto:savioaugulopes@gmail.com)
+
+
+Feito com ❤️ por Savio Lopes 👋🏽 [Entre em contato!](https://www.linkedin.com/in/savio-lopes/)
