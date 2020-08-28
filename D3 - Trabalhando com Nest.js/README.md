@@ -1,4 +1,4 @@
-# Desafio 2 - Autenticação com OpenID Connect e Keycloak
+# Desafio 3 - Criando uma API Rest com o Nest.js
 
 #### 🎲 OpenID Connect e Keycloak
 
