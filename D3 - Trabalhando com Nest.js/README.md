@@ -11,95 +11,84 @@ A aplicação terá um banco de dados SQLite para armazenar os dados, este banco
 
 O banco SQLite deverá estar no controle de versão da aplicação e deverá ter 10 categorias cadastradas.
 
-Para isso, primeiro verifique se tem o [Node.js](https://nodejs.org/en/), o [Docker](https://docs.docker.com/engine/install/) e, opcionalmente, as dependencias do [GO] (https://golang.org/doc/install).
-Estaremos utilizando o Linux para esse desafio.
+Estaremos utilizando o Linux e o [Insomnia](https://insomnia.rest/download/) para esse desafio.
 
-#### 🧭 Criando aplicação NodeJS
+#### 🧭 Instalando Nest.js CLI
 
 ```bash
 
-# No seu terminal, utilize esse comando
-$ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay.io/keycloak/keycloak:11.0.1
+# Vamos começar instalando o Nest CLI, que é a ferramenta oficial para gerar projetos Nest.js.
+# Abra seu terminal e execute o seguinte comando:
 
-# Isso irá iniciar o Keycloak no localhost:8080, que pode ser acessado no navegador escrevendo
-$ localhost:8080
+$ npm install -g @nest/cli
 
-# A senha e o login será admin
+```
+#### 🧭 Criando projeto Nest.js
+
+```bash
+
+# Depois da instalação, navegue até sua pasta de trabalho e execute o seguinte comando para gerar um projeto:
+$ nest new <nome_projeto>
+
+# Após isso acessa a pasta criada e execute
+$ cd <nome_projeto>
+$ npm run start:dev
+
+#  No navegador digite:
+$ http://localhost:3000
+
+# se der tudo certo verá um "Hello World"
 
 ```
 
-#### 🧭 Crie um realm
+#### 🧭 Criando a API Rest
+
 
 ```bash
 
-# Um realm no Keycloak permite a criação de grupos isolados de aplicativos e usuários. 
-# Por padrão, há um único reino no Keycloak chamado master. 
-# Vamos criar nosso primeiro realm, acesse no navegador:
-
-$ http://localhost:8080/auth/admin
-
-# Passe o mouse sobre a lista no canto superior onde está escrito master e clique em add realm
-# Preencha o formulário com os seguintes valores:
-
-$ name: myrealm
-
-# Clique em create
+# Siga o código dentro da pasta src deste repositório:
 
 ```
 
-#### 🧭 Crie um user
+#### 🧭 Instalando TypeORM e o banco de dados SQLite
+
 
 ```bash
 
-# Por padrão na há usuários, então vamos criar um. 
-# No navegador digite:
+# Nest.js suporta TypeORM, que é um dos melhores ORM disponíveis no TypeScript.
+# Vamos começar instalando as dependências necessárias:
 
-$ http://localhost:8080/auth/admin
-
-# Clique em users e em add user
-# Preencha o formulário com os seguintes valores:
-
-$ username: myuser
-
-$ first name: <Seu_primeiro_nome>
-$ last name: <Seu_sobrenome>
-
-$ Clique em Save
-
-# O usuário precisará de uma senha inicial definida para poder fazer o login. Para fazer isso:
-# Clique em credentials (parte superior da página)
-# Preencha o formulário 
-# Clique em OPEN ao lado de Temporário para evitar ter que atualizar a senha no primeiro login
-
-# Vamos agora tentar fazer login no console da conta para verificar se o usuário está configurado corretamente.
-# No navegador digite:
-$ http://localhost:8080/auth/realms/myrealm/account
-
-# Faça login com myuser e a senha que você criou anteriormente
-
+$ npm install --save @nestjs/typeorm typeorm sqlite3
 ```
 
-#### 🧭 Crie um user
+#### 🧭 Testando a API
 
 ```bash
 
-Proteja sua primeira aplicação
-# A primeira etapa é registrar este aplicativo com sua instância Keycloak:
 # No navegador digite:
-$ http://localhost:8080/auth/admin
 
-# Clique em 'clients'
+$ http://localhost:3000/categories
 
-# Preencha o formulário com os seguintes valores:
+# O resultado tem que ser um array vazio
+# Para cadastrar os valores, acesse o Insomnia e crie duas request
 
-$ client ID: myclient
-$ client Protocol: openid-connect
-$root URL: https://www.keycloak.org/app/
+$ Listar categorias - GET
+$ Criar categorias - POST
 
-# Essa aplicação SPA acima é a que o site Keycloak disponibiliza para testes.
+# Na de listagem coloque esta request URL
+$ http://localhost:3000/categories/
 
-# Clique em Save
-# Agora você pode clicar em Entrar para se autenticar usando o servidor Keycloak iniciado anteriormente.
+# Na de criar coloque esta request URL
+
+$ http://localhost:3000/categories/create
+
+# Crie dez categorias seguindo esse modelo na request criar:
+${ "nome": "categoria 1"}
+
+# Dê um send e vá para a listagem verificar se deu tudo certo.
+
+
+# Se estiver tudo certo crie dum Dockerfile e cria a imagem da aplicação e por fim de um push no Docker Hub.
 
 
 ```
