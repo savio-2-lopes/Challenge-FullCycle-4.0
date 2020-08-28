@@ -9,15 +9,6 @@
 </h2>
 
 <p align = "center"> 
-  Desafios da Maratona FullCycle 4.0
-</p>
-
-
-<h2 align = "center">
-  Desafios
-</h2>
-
-<p align = "center"> 
   Desafios da Maratona sobre os principais conceitos de Full Cycle e Microsserviços, autenticação utilizando OpenID Connect e desenvolvimento backend e frontend utilizando SPA.
 </p>
 
