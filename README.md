@@ -12,6 +12,8 @@
   Desafios da Maratona sobre os principais conceitos de Full Cycle e Microsserviços, autenticação utilizando OpenID Connect e desenvolvimento backend e frontend utilizando SPA.
 </p>
 
+<br>
+
 <h4 align = "center">
   Quais são eles?
  </h4>
