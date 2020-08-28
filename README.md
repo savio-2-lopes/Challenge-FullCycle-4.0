@@ -15,7 +15,7 @@
 <br>
 
 <h2 align = "center">
-  QDesafio
+  Desafio
  </h2>
 
 - [X] D1 - Hello World com Docker
