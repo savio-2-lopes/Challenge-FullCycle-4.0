@@ -1,8 +1,16 @@
 # Desafio 3 - Criando uma API Rest com o Nest.js
 
-#### 🎲 OpenID Connect e Keycloak
+#### 🎲 API Rest com Nest.js e SQlite
+<br>
+Nesse desafio devemos criar um recurso de categorias com a URI categories com dois endpoints:
 
-Nesse desafio será realizado o get started disponibilizado no site oficial do Keycloak. A idéia principal é rodar o keycloak utilizando docker em seu computador<br>
+- [ ] GET categories - Consulta de categorias
+- [ ] POST categories - Criação de categorias
+
+A aplicação terá um banco de dados SQLite para armazenar os dados, este banco ficará na raiz do projeto e usará o TypeORM para persistência dos dados.
+
+O banco SQLite deverá estar no controle de versão da aplicação e deverá ter 10 categorias cadastradas.
+
 Para isso, primeiro verifique se tem o [Node.js](https://nodejs.org/en/), o [Docker](https://docs.docker.com/engine/install/) e, opcionalmente, as dependencias do [GO] (https://golang.org/doc/install).
 Estaremos utilizando o Linux para esse desafio.
 
