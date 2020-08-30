@@ -21,5 +21,5 @@
 - [X] D1 - Hello World com Docker
 - [X] D2 - Autenticação utilizando Keycloak
 - [X] D3 - Trabalhando com Nest.js
-- [ ] D4 - Utilizando React.js
+- [X] D4 - Utilizando React.js
 - [ ] D5 - Integração contínua e boas práticas com Github
