@@ -22,4 +22,4 @@
 - [X] D2 - Autenticação utilizando Keycloak
 - [X] D3 - Trabalhando com Nest.js
 - [X] D4 - Utilizando React.js
-- [ ] D5 - Integração contínua e boas práticas com Github
+- [X] D5 - Integração contínua e boas práticas com Github
