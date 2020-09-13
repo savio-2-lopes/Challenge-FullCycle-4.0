@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://maratona.fullcycle.com.br/" target="blank"><img src="http://maratona.fullcycle.com.br/static/site/img/logo-fullcycle.png"/></a>
+  <a href="https://maratona.fullcycle.com.br/" target="blank"><img src="http://maratona.fullcycle.com.br/static/site/img/logo-fullcycle.png"  width="500px"/></a>
 </p>
 
 <br>
@@ -19,6 +19,8 @@
 - [X] D3 - Trabalhando com Nest.js
 - [X] D4 - Utilizando React.js
 - [X] D5 - Integração contínua e boas práticas com Github
+
+<br>
 
 ## Autor 
 
