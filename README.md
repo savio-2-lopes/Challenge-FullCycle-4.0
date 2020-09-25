@@ -1,5 +1,7 @@
 <p align="center">
-  <a href="https://maratona.fullcycle.com.br/" target="blank"><img src="http://maratona.fullcycle.com.br/static/site/img/logo-fullcycle.png"  width="500px"/></a>
+  <a href="https://maratona.fullcycle.com.br/" target="blank">
+    <img src="http://maratona.fullcycle.com.br/static/site/img/logo-fullcycle.png"  width="500px"/>
+  </a>
 </p>
 
 <br>
