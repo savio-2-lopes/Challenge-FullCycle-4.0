@@ -6,7 +6,7 @@
 
 <br>
 
-## Índice
+## :memo: Índice
 
 - [Descrição](#sobre)
 - [Desafios](#Desafios)
@@ -16,7 +16,7 @@
 
 <a id="sobre"></a>
 
-##  Descrição
+##  💻 Descrição
 
 <p align = "center"> 
   Desafios da Maratona sobre os principais conceitos de Full Cycle e Microsserviços, autenticação utilizando OpenID Connect e desenvolvimento backend e frontend utilizando SPA.
@@ -26,7 +26,7 @@
 
 <a id="Desafios"></a>
 
-## Desafio
+## ⚙️ Desafio
 
 - [X] D1 - Hello World com Docker
 - [X] D2 - Autenticação utilizando Keycloak
@@ -38,7 +38,7 @@
 
 <a id="autor"></a>
 
-## Autor 
+## 🦸 Autor 
 
 <a href="https://github.com/savio-2-lopes">
  <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/60948849?s=460&u=689ef123d3278304945aca213bed7413645ea4a7&v=4" width="100px;" alt=""/>
