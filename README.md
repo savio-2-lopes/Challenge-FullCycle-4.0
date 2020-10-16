@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://maratona.fullcycle.com.br/" target="blank">
-     <img alt="fullcycle" title="fullcycle" src="./assets/logo.png" width="250px" />
+     <img alt="fullcycle" title="fullcycle" src="./assets/logo.png" width="300px" />
   </a>
 </p>
 
