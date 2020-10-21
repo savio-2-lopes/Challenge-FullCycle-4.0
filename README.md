@@ -6,7 +6,21 @@
 
 <br>
 
-# :memo: Índice
+<p align="center">
+   <img src="https://img.shields.io/badge/version-0.0.1-yellow.svg" />
+  
+  <a href="https://github.com/savio-2-lopes">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
+  </a>
+ 
+ <a href="https://github.com/savio-2-lopes">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg" target="_blank" />
+  </a>
+</p>
+
+<br> 
+
+## :memo: Índice
 
 - [Descrição](#sobre)
 - [Desafios](#Desafios)
@@ -18,16 +32,15 @@
 
 <a id="sobre"></a>
 
-#  💻 Descrição
+##  💻 Descrição
 
 Desafios da Maratona sobre os principais conceitos de Full Cycle e Microsserviços, autenticação utilizando OpenID Connect e desenvolvimento backend e frontend utilizando SPA.
-
 
 <br>
 
 <a id="Desafios"></a>
 
-# ⚙️ Desafios
+## ⚙️ Desafios
 
 - [X] D1 - Hello World com Docker
 - [X] D2 - Autenticação utilizando Keycloak
@@ -39,7 +52,7 @@ Desafios da Maratona sobre os principais conceitos de Full Cycle e Microsserviç
 
 <a id="tecnologias"></a>
 
-# 🛠 Tecnologias
+## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -53,7 +66,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <a id="licenca"></a>
 
-# :memo: Licença
+## :memo: Licença
 
 Este projeto está sob a licença do MIT. Veja a [página de licença](https://opensource.org/licenses/MIT) para mais detalhes.
 
@@ -61,7 +74,7 @@ Este projeto está sob a licença do MIT. Veja a [página de licença](https://o
 
 <a id="autor"></a>
 
-# 🦸 Autor
+## 🦸 Autor
         
 [![Linkedin Badge](https://img.shields.io/badge/savio-lopes-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://https://www.linkedin.com/in/savio-lopes/)](https://www.linkedin.com/in/savio-lopes/) 
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/savio-2-lopes)](https://github.com/savio-2-lopes)
