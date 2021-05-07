@@ -1,6 +1,6 @@
-<h1>
+<a href="https://full-cycle.netlify.app/" target="_blank">
   <img alt="fullcycle" title="fullcycle" src="./assets/01.gif" width="600px" />
-</h1>
+</a>
   
 # Desafio 4 - Consumindo API com React.js & Typescript
 
@@ -8,6 +8,11 @@
 
 Nesse desafio será utilizado React para consumir uma API:
 Para isso, primeiro verifique se possui o [Node.js](https://nodejs.org/en/) e, opcionalmente, o gerenciador de pacotes [Yarn](https://yarnpkg.com) instalados.
+
+<br>
+Para acessar o deploy da aplicação, segue o link abaixo:<br>
+:link: https://full-cycle.netlify.app/
+<br>
 
 #### 🧭 Instalando a aplicação
 
