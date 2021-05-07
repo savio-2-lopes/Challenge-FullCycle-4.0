@@ -1,3 +1,9 @@
+<a align="center" href="https://full-cycle.netlify.app/" target="_blank">
+  <img alt="fullcycle" title="fullcycle" src="./assets/01.gif" width="600px" />
+</a>
+
+<br>
+
 <p align="center">
   <a href="https://maratona.fullcycle.com.br/" target="blank">
      <img alt="fullcycle" title="fullcycle" src="./assets/logo.png" width="300px" />
@@ -37,11 +43,6 @@
 
 Desafios da Maratona sobre os principais conceitos de Full Cycle e Microsserviços, autenticação utilizando OpenID Connect e desenvolvimento backend e frontend utilizando SPA.
 
-<br>
-
-<a href="https://full-cycle.netlify.app/" target="_blank">
-  <img alt="fullcycle" title="fullcycle" src="./assets/01.gif" width="600px" />
-</a>
 <br>
 
 <a id="Desafios"></a>
