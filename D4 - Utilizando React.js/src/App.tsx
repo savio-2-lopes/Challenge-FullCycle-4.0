@@ -1,14 +1,11 @@
 import React from 'react';
-
 import Logo from './Logo.png';
-
 import './App.css';
 import './styles';
-import { AppContainer, Header, Content, TextHeader, Footer, FooterText} from './styles';
+import { AppContainer, Header, Content, TextHeader, Footer, FooterText } from './styles';
 import Routes from './routes';
 
-
-function App() {
+export default function App() {
   return (
     <AppContainer>
       <Header>
@@ -17,9 +14,9 @@ function App() {
       </Header>
 
       <Content>
-          <Routes />
+        <Routes />
       </Content>
-      
+
       <Footer>
         <FooterText> Desenvolvido por </FooterText>
         <a href="https://github.com/savio-2-lopes">
@@ -29,5 +26,3 @@ function App() {
     </AppContainer>
   );
 }
-
-export default App;

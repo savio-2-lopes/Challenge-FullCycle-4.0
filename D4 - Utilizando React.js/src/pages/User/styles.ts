@@ -17,7 +17,7 @@ export const UserAvatar = styled.img`
 export const UserDataContainer = styled.div`
   background-color: lightgray;
   border-radius: 10px;
-  color: var(--dark);
+  color: var(--background);
   height: 70px;
   margin: 20px;
   width: 100%;
@@ -31,5 +31,5 @@ export const UserName = styled.div`
 `;
 
 export const UserEmail = styled.div`
-  color: var(--gray-dark);
+  color: var(--dark);
 `;

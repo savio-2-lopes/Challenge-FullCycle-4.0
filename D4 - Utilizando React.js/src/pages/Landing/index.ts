@@ -2,16 +2,16 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Landing = styled(Link)`
-  background-color: var(--cyan);
+  background-color: var(--yellow);
   padding: 10px 20px;
   border-radius: 10px;
   margin: 40px 0;
   cursor: pointer;
-  color: #000;
+  color: var(--background);
   text-decoration: none;
 
   &:hover {
-    background-color: #f0f0f0;
-    color: #000;
+    background-color: var(--yellow);
+    color: var(--background);
   }
 `;

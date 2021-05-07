@@ -7,8 +7,8 @@ import Users from '../pages/UsersList';
 export default function Routes() {
   return (
     <BrowserRouter>
-      <Route path   ="/"        component={Main} exact />
-      <Route path   ="/users"   component={Users} />
+      <Route path="/" component={Main} exact />
+      <Route path="/users" component={Users} />
     </BrowserRouter>
   );
 }

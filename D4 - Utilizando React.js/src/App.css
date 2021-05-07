@@ -1,3 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --background: #303030;
+  --yellow: #ffcd00;
+  --dark: #262626;
+  --blue-dark: #2e3747;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body,
+input,
+textarea,
+button {
+  font: 500 1rem Inter, sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +48,7 @@
 }
 
 .App-header {
-  background-color: #2e3747;
+  background-color: var(--blue-dark);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +59,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--yellow);
 }
 
 @keyframes App-logo-spin {

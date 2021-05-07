@@ -14,7 +14,7 @@ export const Title = styled.h2`
   width: 100%;
   padding: 20px;
   justify-content: center;
-  color: var(--yellow);
+  color: #ffcd00;
 `;
 
 export const UsersContainer = styled.div`
