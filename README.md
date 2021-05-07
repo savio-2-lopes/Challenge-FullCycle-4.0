@@ -4,13 +4,13 @@
 </a>
 </p>
 
-<br>
+<br><br>
 
-<p align="center">
+<h1 align="center">
   <a href="https://maratona.fullcycle.com.br/" target="blank">
      <img alt="fullcycle" title="fullcycle" src="./assets/logo.png" width="300px" />
   </a>
-</p>
+</h1>
 
 <br>
 
