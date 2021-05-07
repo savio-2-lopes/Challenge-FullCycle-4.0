@@ -1,15 +1,15 @@
-<p align="center">
-<a href="https://full-cycle.netlify.app/" target="_blank">
-  <img alt="fullcycle" title="fullcycle" src="./assets/01.gif" width="600px" />
-</a>
-</p>
-
-<br><br>
-
 <h1 align="center">
   <a href="https://maratona.fullcycle.com.br/" target="blank">
      <img alt="fullcycle" title="fullcycle" src="./assets/logo.png" width="300px" />
   </a>
+</h1>
+
+<br><br>
+
+<h1 align="center">
+<a href="https://full-cycle.netlify.app/" target="_blank">
+  <img alt="fullcycle" title="fullcycle" src="./assets/01.gif" width="600px" />
+</a>
 </h1>
 
 <br>
