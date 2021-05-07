@@ -1,6 +1,6 @@
 <h1 align="center">
 <a href="https://full-cycle.netlify.app/" target="_blank">
-  <img alt="fullcycle" title="fullcycle" src="./assets/01.gif" width="700px" />
+  <img alt="fullcycle" title="fullcycle" src="./public/01.gif" width="700px" />
 </a>
 </h1>
   
