@@ -1,6 +1,8 @@
-<a align="center" href="https://full-cycle.netlify.app/" target="_blank">
+<p align="center">
+<a href="https://full-cycle.netlify.app/" target="_blank">
   <img alt="fullcycle" title="fullcycle" src="./assets/01.gif" width="600px" />
 </a>
+</p>
 
 <br>
 
