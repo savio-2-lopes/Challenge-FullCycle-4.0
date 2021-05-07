@@ -1,23 +1,25 @@
 package main
 
+// Importando as depedências
 import (
 	"context"
 	"encoding/json"
 	"log"
 	"net/http"
-
 	oidc "github.com/coreos/go-oidc"
 	"golang.org/x/oauth2"
 )
 
+// Chave para criar um cliente no keycloack
 var (
-	clientID     = "app"
-	clientSecret = "1c5f824b-4408-45cd-947a-63549452aadd"
+	clientID = "app"
+	clientSecret = "<KEY>"
 )
 
 func main() {
 	ctx := context.Background()
 
+	// Criando realm no keycloak
 	provider, err := oidc.NewProvider(ctx, "http://localhost:8080/auth/realms/demo")
 	if err != nil {
 		log.Fatal(err)
@@ -67,11 +69,8 @@ func main() {
 			http.Error(w, err.Error(), http.StatusBadRequest)
 			return
 		}
-
 		w.Write(data)
-
 	})
 
 	log.Fatal(http.ListenAndServe(":8081", nil))
-
 }
