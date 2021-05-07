@@ -87,9 +87,7 @@ ${ "nome": "categoria 1"}
 
 # Dê um send e vá para a listagem verificar se deu tudo certo.
 
-
 # Se estiver tudo certo crie dum Dockerfile e cria a imagem da aplicação e por fim de um push no Docker Hub.
-
 
 ```
 
