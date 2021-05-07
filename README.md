@@ -4,11 +4,9 @@
   </a>
 </h1>
 
-<br><br>
-
 <h1 align="center">
 <a href="https://full-cycle.netlify.app/" target="_blank">
-  <img alt="fullcycle" title="fullcycle" src="./assets/01.gif" width="600px" />
+  <img alt="fullcycle" title="fullcycle" src="./assets/01.gif" width="700px" />
 </a>
 </h1>
 
